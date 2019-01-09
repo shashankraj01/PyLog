@@ -32,6 +32,7 @@ def send(filename):
     os.remove(filename)
 
 def send_and_clear_cache():
+    global chars
     length = len(chars)
     if length > 150 and chars[length - 1] == ' ':
         filename = 'temp.dt'
